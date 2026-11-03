@@ -2,7 +2,7 @@
 layout: post
 title: 我的第一篇博客
 date: 2026-11-03
-published: false
+published: true
 ---
 今天，我开始用自己的博客记录生活。
 
