@@ -1,0 +1,9 @@
+---
+layout: default
+title: 首页
+---
+<section class="hero"><div class="eyebrow">LIFE / LEARNING / GROWTH</div><h1>日子慢慢过，<br>故事慢慢写。</h1><p class="intro">给生活留一点空白，也给回忆留一个地方。<br>在这里，记录生活的片刻、学习的收获，和成长中的自己。</p></section>
+<section id="posts"><div class="section-head"><h2>最近的记录</h2><small>{{ site.posts | size }} 篇文字</small></div>
+{% for post in site.posts %}<article class="entry"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y.%m.%d" }}</time><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.excerpt | strip_html | truncate: 100 }}</p></article>
+{% else %}<div class="empty"><h3>故事，从下一笔开始。</h3><p>这里还没有文章。第一篇记录，可以从今天的一件小事写起。</p></div>{% endfor %}</section>
+<section class="about" id="about"><h2>关于这个小角落</h2><p>这是我的个人博客，用来记录生活、学习和成长。让那些细小的发现、认真走过的路，都有迹可循。</p><small>不急着抵达，先认真记录。</small></section>

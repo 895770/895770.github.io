@@ -1,0 +1,10 @@
+title: 慢慢记录
+description: 记录生活、学习和成长。
+url: "https://895770.github.io"
+baseurl: ""
+lang: zh-CN
+timezone: Asia/Shanghai
+permalink: /posts/:title/
+future: false
+exclude:
+  - 写作指南.md
