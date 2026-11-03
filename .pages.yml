@@ -1,0 +1,24 @@
+media:
+  input: assets/images
+  output: /assets/images
+  categories: [image]
+  rename: random
+content:
+  - name: posts
+    label: 我的文章
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{hour}{minute}{second}.md"
+    fields:
+      - {name: layout, type: string, default: post, hidden: true}
+      - {name: title, label: 标题, type: string, required: true}
+      - name: date
+        label: 日期
+        type: date
+        options: {format: yyyy-MM-dd}
+      - {name: published, label: 发布到博客, type: boolean, default: false}
+      - name: body
+        label: 正文
+        type: rich-text
+        options: {format: markdown, switcher: false}
