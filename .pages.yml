@@ -23,4 +23,4 @@ content:
       - name: body
         label: 正文
         type: rich-text
-        options: {format: markdown, switcher: false}
+        options: {format: markdown, switcher: false, media: blog_images}
