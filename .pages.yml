@@ -1,8 +1,10 @@
 media:
-  input: assets/images
-  output: /assets/images
-  categories: [image]
-  rename: random
+  - name: blog_images
+    label: 博客图片
+    input: assets/images
+    output: /assets/images
+    categories: [image]
+    rename: random
 content:
   - name: posts
     label: 我的文章
